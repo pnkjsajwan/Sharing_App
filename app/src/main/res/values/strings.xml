@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">KotLock</string>
+    <string name="name">Name</string>
+    <string name="city">City</string>
+    <string name="qualification">Qualification</string>
+    <string name="expertise">Any Expertise</string>
+    <string name="email_or_phone">Email or Phone</string>
+</resources>

@@ -1,0 +1,2 @@
+rootProject.name='KotDown'
+include ':app'
