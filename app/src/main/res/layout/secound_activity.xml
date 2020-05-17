@@ -3,38 +3,40 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-<TextView
-    android:id="@+id/tv_name"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:scrollHorizontally="true"
-    android:ems="10"
-    android:textSize="20dp"
-    android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:ems="10"
+        android:scrollHorizontally="true"
+        android:textSize="20dp" />
+
     <TextView
         android:id="@+id/tv_no"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:scrollHorizontally="true"
+        android:layout_margin="10dp"
         android:ems="10"
-        android:textSize="20dp"
-        android:layout_margin="10dp"/>
+        android:scrollHorizontally="true"
+        android:textSize="20dp" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_send_data"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center|center_horizontal"
+        android:backgroundTint="@color/colorPrimaryDark"
         android:text="Share Data"
-        android:textAllCaps="false"
-        android:backgroundTint="@color/colorPrimaryDark"/>
+        android:textAllCaps="false" />
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_show_recycle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/colorPrimaryDark"
         android:layout_gravity="center_horizontal"
+        android:backgroundTint="@color/colorPrimaryDark"
         android:text="Recyacle View"
-        android:textAllCaps="false"
-        />
+        android:textAllCaps="false" />
 </LinearLayout>

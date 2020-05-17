@@ -1,8 +1,9 @@
-package com.corona.lockdown
+package com.corona.lockdown.activites
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.corona.lockdown.R
 import kotlinx.android.synthetic.main.secound_activity.*
 
 class Secound_activity : AppCompatActivity() {
@@ -24,6 +25,10 @@ class Secound_activity : AppCompatActivity() {
             intent.putExtra(Intent.EXTRA_TEXT,message)
             intent.type = "text/plain"
             startActivity(Intent.createChooser(intent,"send to :"))
+        }
+        btn_show_recycle.setOnClickListener {
+            val intent = Intent(this, HobbiesActivity::class.java)
+            startActivity(intent)
         }
 
     }
