@@ -5,22 +5,22 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".activites.MainActivity">
-<ImageView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+<com.mikhaellopez.circularimageview.CircularImageView
+    android:layout_width="200dp"
+    android:layout_height="200dp"
     android:layout_gravity="center_horizontal"
-    android:layout_marginTop="100dp"
-    android:src="@mipmap/ic_launcher_it_is_what_it_is"/>
+    android:layout_marginTop="10dp"
+    android:src="@mipmap/ic_launcher_it_is_what_it_is_round"/>
     <com.google.android.material.textview.MaterialTextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="100dp"
         android:gravity="center_vertical"
-        android:text="'It is what it is' is as simple as name, But choosing right quotes for right thinker is bit dificult.."
-        android:textColor="@color/black"
+        android:text=" it's as simple as name, just scroll and share but pick out right quotes for right time is bit dificult.."
+        android:textColor="@color/green_fade_light"
         android:textSize="20sp"
-        android:textStyle="normal" />
+        android:textStyle="bold" />
 
     <com.google.android.material.button.MaterialButton
         style="@style/Widget.MaterialComponents.Button.OutlinedButton "

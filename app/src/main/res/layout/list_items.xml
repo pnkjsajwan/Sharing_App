@@ -11,7 +11,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#FBF9F9"
+        android:background="#0D0D0D"
         android:baselineAligned="false"
         android:orientation="horizontal"
         android:padding="5dp">
@@ -23,16 +23,16 @@
             android:layout_margin="5dp"
             android:layout_weight="1"
             android:text="@string/title"
-            android:textColor="#000"
-            android:textSize="18sp"
-            android:textStyle="bold"/>
+            android:textColor="#F4F2F2"
+            android:textSize="15sp"
+            android:textStyle="normal"/>
         <ImageView
             android:id="@+id/img_share"
-            android:layout_width="30dp"
+            android:layout_width="25dp"
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:src="@drawable/ic_share_black_24dp"
-            android:tint="#000"/>
+            android:tint="#EBE9E9"/>
     </LinearLayout>
 
 
