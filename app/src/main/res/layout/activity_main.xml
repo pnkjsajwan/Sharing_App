@@ -1,81 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="10dp"
+    android:orientation="vertical"
     tools:context=".activites.MainActivity">
-
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="100dp"
+    android:src="@mipmap/ic_launcher_it_is_what_it_is"/>
     <com.google.android.material.textview.MaterialTextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:text="Form 1"
-        android:textColor="@color/blue_deep_dark"
-        android:textSize="30dp"
-        android:textStyle="bold" />
-
-    <com.google.android.material.textview.MaterialTextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="70dp"
-        android:text="Please fill all the field"
-        android:textColor="@color/blue_deep_dark"
-        android:textSize="20dp"
-        android:textStyle="bold" />
-
-    <!--    <Button-->
-    <!--        android:id="@+id/button_show_toast"-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:layout_alignParentTop="true"-->
-    <!--        android:layout_centerHorizontal="true"-->
-    <!--        android:layout_marginTop="100dp"-->
-    <!--        android:text="Show Toast" />-->
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/edit_view_user_frist_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="20dp"
         android:layout_marginTop="100dp"
-        android:ems="10"
-        android:hint="Enter first name"
-        android:inputType="textPersonName" />
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/edit_view_user_last_name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="150dp"
-        android:ems="10"
-        android:hint="Enter last name"
-        android:inputType="textPersonName" />
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/edit_view_user_mobile_no"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="200dp"
-        android:ems="10"
-        android:hint="Enter mobile no"
-        android:inputType="phone" />
+        android:gravity="center_vertical"
+        android:text="'It is what it is' is as simple as name, But choosing right quotes for right thinker is bit dificult.."
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="normal" />
 
     <com.google.android.material.button.MaterialButton
-        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-        android:id="@+id/button_submit"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton "
+        android:id="@+id/btn_lets_started"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="300dp"
-        android:text="sent data"/>
-
-</RelativeLayout>
+        android:layout_marginTop="200dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/lets_stared"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/black"/>
+</LinearLayout>

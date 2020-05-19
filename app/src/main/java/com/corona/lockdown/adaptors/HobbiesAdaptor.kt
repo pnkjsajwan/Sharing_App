@@ -6,13 +6,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.corona.lockdown.models.Hobby
 import com.corona.lockdown.R
+import com.corona.lockdown.models.Hobby
 import kotlinx.android.synthetic.main.list_items.view.*
 
 class HobbiesAdaptor(val context: Context, val hobbies: List<Hobby>) :
     RecyclerView.Adapter<HobbiesAdaptor.MyViewHolder>() {
-
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         val view = LayoutInflater.from(context).inflate(R.layout.list_items, parent, false)
@@ -34,7 +33,7 @@ class HobbiesAdaptor(val context: Context, val hobbies: List<Hobby>) :
 
         init {
             itemView.img_share.setOnClickListener {
-                val message = "My Hubby is : " + currentHobby!!.title
+                val message = currentHobby!!.title
                 val intent = Intent()
                 intent.action = Intent.ACTION_SEND
                 intent.putExtra(Intent.EXTRA_TEXT, message)
@@ -45,7 +44,6 @@ class HobbiesAdaptor(val context: Context, val hobbies: List<Hobby>) :
 
         fun setData(hobby: Hobby?, position: Int) {
             itemView.txvTitle.text = hobby!!.title
-
             this.currentHobby = hobby
             this.currentPostion = position
         }

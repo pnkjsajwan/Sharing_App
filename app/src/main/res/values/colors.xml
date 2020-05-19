@@ -6,5 +6,7 @@
     <color name="green_fade_light">#5C946E</color>
     <color name="blue_fade_light">#A0DDE6</color>
     <color name="blue_deep_dark">#1D3557</color>
+    <color name="black">#000</color>
+    <color name="white">#eee</color>
 
 </resources>
